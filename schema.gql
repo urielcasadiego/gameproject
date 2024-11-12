@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ScoreType {
+  userId: String!
+  scoreId: String!
+  name: String!
+  game: String!
+  score: Int!
+  createdAt: String!
+  updatedAt: String
+}
+
+type ScoresPagination {
+  code: Int!
+  message: String!
+  data: [ScoreType!]!
+  totalDocs: Int!
+  totalPages: Int!
+  page: Int!
+  limit: Int!
+  hasNextPage: Boolean!
+  hasPrevPage: Boolean!
+  nextPage: Int!
+  prevPage: Int!
+}
+
+type Query {
+  getAllScores(page: Int, limit: Int): ScoresPagination!
+  getAllScoresTop: ScoresPagination!
+}
