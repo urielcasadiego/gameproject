@@ -1,0 +1,39 @@
+.clearfix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hint-text {
+    flex: 1;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.pagination .page-link {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    padding: 4px 10px;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pagination .page-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.pagination .active .page-link {
+    background-color: #ffc008;
+    color: white;
+}

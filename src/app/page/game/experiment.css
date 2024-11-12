@@ -1,0 +1,36 @@
+.play-field {
+    background-color: #2c36368f;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.play-field--cell {
+    border-radius: 6%;
+    z-index: 10;
+}
+
+.play-field--cell.rabbit {
+    border-radius: 18%;
+    z-index: 11;
+}
+
+.play-field--cell.snake {
+    margin: -1px;
+    z-index: 12;
+}
+
+.status--pause .play-field--cell:not(.rabbit):not(.snake) {
+    opacity: 0.7;
+}
+
+.status--game-over .play-field {
+    background-color: #ffffff45;
+}
+
+.status--game-over .play-field--cell.snake {
+    background-color: rgb(255, 65, 65);
+}
+
+.status--game-over .play-field--cell.head {
+    background-color: red;
+}
